@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "snowline": {
+      "command": "npx",
+      "args": ["-y", "snowline-mcp"]
+    }
+  }
+}
