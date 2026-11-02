@@ -1,6 +1,6 @@
 {
   "name": "snowline-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Connect AI agents to the Snowline Avalanche ecosystem intelligence API",
   "license": "MIT",
   "type": "commonjs",
@@ -11,6 +11,14 @@
     "bin/index.js",
     "README.md"
   ],
+  "engines": {
+    "node": ">=18"
+  },
+  "homepage": "https://snowlineapp.xyz/mcp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frey-web3/snowline.git"
+  },
   "dependencies": {
     "mcp-remote": "^0.15.2"
   },
