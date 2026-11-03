@@ -1,0 +1,17 @@
+{
+  "name": "snowline",
+  "description": "Official Snowline plugins for Avalanche ecosystem intelligence.",
+  "owner": {
+    "name": "Snowline"
+  },
+  "plugins": [
+    {
+      "name": "snowline-mcp",
+      "source": {
+        "source": "github",
+        "repo": "frey-web3/snowline-mcp"
+      },
+      "description": "Avalanche ecosystem intelligence: businesses, projects, builders, tokens, L1 chains, network metrics, and milestones."
+    }
+  ]
+}

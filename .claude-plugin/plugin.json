@@ -1,0 +1,9 @@
+{
+  "name": "snowline-mcp",
+  "version": "2.0.0",
+  "description": "Avalanche ecosystem intelligence from Snowline: verified businesses, projects, builders, tokens, L1 chains, network metrics, and ecosystem milestones, with sources and staleness flags.",
+  "author": {
+    "name": "Snowline",
+    "url": "https://www.snowlineapp.xyz"
+  }
+}

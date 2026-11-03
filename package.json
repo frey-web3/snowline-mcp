@@ -1,32 +1,58 @@
 {
   "name": "snowline-mcp",
-  "version": "1.0.1",
-  "description": "Connect AI agents to the Snowline Avalanche ecosystem intelligence API",
+  "version": "2.0.0",
+  "description": "Model Context Protocol server exposing Snowline's Avalanche ecosystem intelligence API to AI agents, IDEs and autonomous agents.",
   "license": "MIT",
-  "type": "commonjs",
+  "type": "module",
   "bin": {
-    "snowline-mcp": "bin/index.js"
+    "snowline-mcp": "dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
   },
   "files": [
-    "bin/index.js",
-    "README.md"
+    "dist",
+    "README.md",
+    "LICENSE"
   ],
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
-  "homepage": "https://snowlineapp.xyz/mcp",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "smoke": "node scripts/smoke.mjs",
+    "validate:plugin": "node scripts/validate-plugin.mjs",
+    "prepublishOnly": "npm run build"
+  },
+  "homepage": "https://www.snowlineapp.xyz/mcp",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frey-web3/snowline.git"
+    "url": "git+https://github.com/frey-web3/snowline-mcp.git"
   },
-  "dependencies": {
-    "mcp-remote": "^0.15.2"
+  "bugs": {
+    "url": "https://github.com/frey-web3/snowline-mcp/issues"
   },
   "keywords": [
     "snowline",
     "avalanche",
     "mcp",
     "model-context-protocol",
-    "web3"
-  ]
+    "avax",
+    "ai-agents",
+    "web3",
+    "defi"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
 }

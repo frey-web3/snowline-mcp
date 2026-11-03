@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "snowline-local": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "snowline-mcp"]
+    },
+    "snowline-remote": {
+      "type": "streamable-http",
+      "url": "https://www.snowlineapp.xyz/api/mcp"
+    }
+  }
+}
